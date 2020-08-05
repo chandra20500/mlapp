@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>header</title>
+</head>
+<body>
+	<p>
+		value goes here
+	</p>
+	<form action="{{url_for('result')}}" method="post">
+		<input type="numeric" name="V/Vc" placeholder="V/Vc" />
+		<input type="numeric" name="Cross_Section" placeholder="Cross_Section"/>
+		<input type="numeric" name="Sediment_Gradation" placeholder="Sediment_Gradation"/>
+		<input type="numeric" name="size_of_grain" placeholder="size_of_grain"/>
+		<input type="numeric" name="Time_of_experiment" placeholder="Time_of_experiment"/>
+		<button type="submit">
+			predict
+		</button>
+	</form>
+	<br />
+	<br />
+	{{prediction_text}}
+</body>
+</html>
