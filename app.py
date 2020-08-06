@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 import pickle
 
 app = Flask('stock_pricer')
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('model(1).pkl','rb'))
 
 @app.route('/')
 def show_predict_stock_form():
